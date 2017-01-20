@@ -10,12 +10,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.gebeya.gebeyaenterprise.Splash"
     android:background="@color/colorSplashScreen">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_splash_image"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/gebeya_all_rights_reserved"
         android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/colorWhite"/>
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="16dp"/>
 
 </RelativeLayout>
