@@ -2,4 +2,8 @@
     <string name="app_name">Gebeya Enterprise</string>
     <string name="action_settings">Settings</string>
     <string name="gebeya_all_rights_reserved">&#169; Gebeya. All Rights Reserved.</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Forgot your password?</string>
 </resources>
