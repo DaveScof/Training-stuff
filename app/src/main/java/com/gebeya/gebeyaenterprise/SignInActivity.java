@@ -1,13 +1,14 @@
 package com.gebeya.gebeyaenterprise;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v4.app.Fragment;
 
-public class SignInActivity extends AppCompatActivity {
+/**
+ * Created by gebeya-admin on 1/23/17.
+ */
 
+public class SignInActivity extends SingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+    public Fragment createFragment() {
+        return new SignInFragment();
     }
 }

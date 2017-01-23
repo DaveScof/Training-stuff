@@ -6,4 +6,7 @@
     <string name="password">Password</string>
     <string name="sign_in">Sign in</string>
     <string name="forgot_password">Forgot your password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="talent">Talent</string>
+    <string name="client">Client</string>
 </resources>
