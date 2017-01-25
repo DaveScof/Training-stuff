@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp">
+<TextView
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:text="Mobile app development for Gebeya IT Academy"
+    android:padding="10dp"
+    android:textColor="@color/colorGebeyaPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/colorGebeyaPrimary"
+            android:layout_margin="0.5dp">
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="$5000"
+                android:layout_margin="6dp"/>
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/budget"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/colorGebeyaPrimary"
+            android:layout_margin="0.5dp">
+            <ImageView
+                android:src="@drawable/ic_ongoing"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="6dp"/>
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pending"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/colorOrange"
+            android:layout_margin="0.5dp">
+            <ImageView
+                android:src="@drawable/ic_next_book"
+                android:textColor="@color/colorWhite"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="6dp"/>
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_project"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

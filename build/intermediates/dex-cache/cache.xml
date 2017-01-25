@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e56af82a460eea9a391a0d505fb0bc868e0b3457">
+        sha1="32b4e6819fa188b005d2d07b0abb79ebc3b89d91">
         <dex dex="/home/gebeya-admin/AndroidStudioProjects/GebeyaEnterprise/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f8222b1d5b0b8cd7b893e91aa7118e2fd5cf953/classes.dex" />
     </item>
     <item
@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="58c3fc9a183a52e6c75d6bea9308058a138ba87e">
+        sha1="48c4767efd4950f8280d0cdeb0fc6d8502bc3294">
         <dex dex="/home/gebeya-admin/AndroidStudioProjects/GebeyaEnterprise/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0631019d7de84b268aac31e03c8897b5909959b1/classes.dex" />
     </item>
     <item

@@ -9,4 +9,12 @@
     <string name="sign_up">Sign up</string>
     <string name="talent">Talent</string>
     <string name="client">Client</string>
+    <string name="client_sign_up">Client Sign up</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="individual_account">Individual Account</string>
+    <string name="company_account">Company Account</string>
+    <string name="next">Next</string>
+    <string name="budget">Budget</string>
+    <string name="pending">Pending</string>
+    <string name="book_project">Book Project</string>
 </resources>
