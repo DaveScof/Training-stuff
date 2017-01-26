@@ -10,7 +10,7 @@
     android:textSize="18sp"
     android:text="Mobile app development for Gebeya IT Academy"
     android:padding="10dp"
-    android:textColor="@color/colorGebeyaPrimary"/>
+    android:textColor="@color/gebeyaPrimary"/>
 
     <LinearLayout
         android:weightSum="3"
@@ -24,17 +24,17 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@color/colorGebeyaPrimary"
+            android:background="@color/gebeyaPrimary"
             android:layout_margin="0.5dp">
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:text="$5000"
                 android:layout_margin="6dp"/>
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/budget"/>
@@ -47,7 +47,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@color/colorGebeyaPrimary"
+            android:background="@color/gebeyaPrimary"
             android:layout_margin="0.5dp">
             <ImageView
                 android:src="@drawable/ic_ongoing"
@@ -55,7 +55,7 @@
                 android:layout_height="20dp"
                 android:layout_margin="6dp"/>
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pending"/>
@@ -67,16 +67,16 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@color/colorOrange"
+            android:background="@color/orange"
             android:layout_margin="0.5dp">
             <ImageView
                 android:src="@drawable/ic_next_book"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_margin="6dp"/>
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/book_project"/>

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gebeya.gebeyaenterprise.SignUpActivity">
+    tools:context="com.gebeya.gebeyaenterprise.activity.SignUpActivitySingle">
 
     <ImageView
         android:id="@id/logoImageView"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:textSize="32sp"
-        android:textColor="@color/colorGebeyaPrimary"
+        android:textColor="@color/gebeyaPrimary"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:id="@+id/signUpTextView"
@@ -44,8 +44,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/colorWhite"
-            android:background="@color/colorGebeyaPrimary"
+            android:textColor="@color/white"
+            android:background="@color/gebeyaPrimary"
             android:textSize="@dimen/text_large"
             android:textAllCaps="false"
             android:text="@string/talent"

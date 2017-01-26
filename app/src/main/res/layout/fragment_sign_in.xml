@@ -10,9 +10,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gebeya.gebeyaenterprise.SignInFragment"
+    tools:context="com.gebeya.gebeyaenterprise.fragment.SignInFragment"
     app:errorEnabled="true"
-    app:passwordToggleEnabled="false"
     android:orientation="vertical">
 
 <ImageView
@@ -29,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_in"
         android:textSize="32sp"
-        android:textColor="@color/colorGebeyaPrimary"
+        android:textColor="@color/gebeyaPrimary"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:id="@+id/signInTextView"
@@ -55,12 +54,6 @@
             android:hint="@string/email_address" />
 
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/new_password_layout"
-            android:layout_width="match_parent"
-            app:passwordToggleEnabled="false"
-            android:layout_height="wrap_content">
-
             <EditText
                 android:id="@+id/password_edit_text"
                 android:layout_width="match_parent"
@@ -70,9 +63,6 @@
                 android:inputType="textPassword"
 
                 />
-
-        </android.support.design.widget.TextInputLayout>
-
 
         <TextView
             android:layout_marginTop="16dp"
@@ -88,8 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/colorWhite"
-            android:background="@color/colorGebeyaPrimary"
+            android:textColor="@color/white"
+            android:background="@color/gebeyaPrimary"
             android:textSize="@dimen/text_large"
             android:textAllCaps="false"
             android:text="@string/sign_in"/>

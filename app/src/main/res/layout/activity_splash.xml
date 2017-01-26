@@ -8,8 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gebeya.gebeyaenterprise.Splash"
-    android:background="@color/colorGebeyaPrimary">
+    tools:context="com.gebeya.gebeyaenterprise.activity.Splash"
+    android:background="@color/gebeyaPrimary">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
         android:text="@string/gebeya_all_rights_reserved"
         android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/white"
         android:layout_marginBottom="16dp"/>
 
 </RelativeLayout>
