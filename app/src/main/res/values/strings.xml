@@ -28,4 +28,16 @@
     <string name="sing_up_successful">Sing up Successful</string>
     <string name="talent_sign_up">Talent Sign up</string>
     <string name="last_name">Last Name</string>
+    <string name="education">Education</string>
+    <string name="professional_certificates">Professional Certificates</string>
+    <string name="select_languages">Select Languages</string>
+    <string name="sql">SQL</string>
+    <string name="java">Java</string>
+    <string name="javascript">JavaScript</string>
+    <string name="csharp">C#</string>
+    <string name="cpp">C++</string>
+    <string name="python">Python</string>
+    <string name="php">PHP</string>
+    <string name="ruby_rails">Ruby on Rails</string>
+    <string name="ios_swift">iOS/Swift</string>
 </resources>

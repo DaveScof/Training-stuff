@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/gebeya_logo"/>
+    <TextView
+        style="@style/textView.title"
+        android:text="Talent Sign up"/>
+
+    <LinearLayout
+        style="@style/inputField">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <EditText
+            style="@style/editText.email"
+            android:hint="@string/education"/>
+
+        <EditText
+            style="@style/editText.email"
+            android:hint="@string/professional_certificates"/>
+
+        <Button
+            style="@style/button.actionPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="@string/get_started"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/read_accept"
+        layout="@layout/accept_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/already_member"/>
+
+
+</LinearLayout>
