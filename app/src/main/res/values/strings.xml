@@ -17,4 +17,15 @@
     <string name="budget">Budget</string>
     <string name="pending">Pending</string>
     <string name="book_project">Book Project</string>
+    <string name="first_name">First Name</string>
+    <string name="second_name">Second Name</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="get_started">Get Started</string>
+    <string name="read_and_accepted">I have read and accepted the</string>
+    <string name="already_member">Already a member?</string>
+    <string name="terms_and_conditions"><a href="http://www.google.com/">terms and conditions</a></string>
+    <string name="sing_up_successful">Sing up Successful</string>
+    <string name="talent_sign_up">Talent Sign up</string>
+    <string name="last_name">Last Name</string>
 </resources>

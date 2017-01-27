@@ -16,7 +16,7 @@ import com.gebeya.gebeyaenterprise.utils.Fonts;
 
 import java.util.Locale;
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     public static final String TAG = "Qene Technologies";
 
@@ -25,6 +25,9 @@ public class BaseActivity extends AppCompatActivity {
     public Typeface fontBold = Fonts.bold;
     public Typeface fontLight = Fonts.light;
     public Typeface fontNormal = Fonts.normal;
+
+    public abstract void initViews ();
+    public abstract void setListeners ();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/gebeya_logo"
+        android:id="@id/logoImageView"/>
+
+    <TextView
+        style="@style/textView.title"
+        android:text="@string/client_sign_up"
+        android:id="@id/titleTextView"/>
+
+    <LinearLayout
+        android:id="@+id/input_fields"
+        style="@style/inputField">
+
+        <EditText
+            style="@style/editText"
+            android:hint="@string/first_name" />
+
+        <EditText
+            style="@style/editText"
+            android:hint="@string/second_name" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <Button
+            style="@style/button.actionPrimary"
+            android:text="@string/get_started"/>
+    </LinearLayout>
+    <CheckBox
+        android:autoLink="web"
+        android:id="@+id/read_accept_chkbx"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_below="@id/input_fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/read_and_accepted"
+        android:textColor="@color/darkest_gray"/>
+    <TextView
+        style="@style/textView.link"
+        android:layout_toRightOf="@id/read_accept_chkbx"
+        android:layout_below="@id/input_fields"
+        android:layout_alignBaseline="@id/read_accept_chkbx"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:text="@string/terms_and_conditions"
+        android:id="@+id/textView"/>
+
+    <include layout="@layout/already_member"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/read_accept_chkbx"/>
+
+
+</RelativeLayout>
