@@ -1,3 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ========================== String Arrays ======================================= -->
+
+    <!-- ================= Languages ================== -->
+    <string-array name="langs">
+        <item>Select languages you are conversant</item>
+        <item>SQL</item>
+        <item>Java</item>
+        <item>JavaScript</item>
+        <item>C#</item>
+        <item>C++</item>
+        <item>Python</item>
+        <item>PHP</item>
+        <item>Ruby on Rails</item>
+    </string-array>
+
+
+    <!-- =================== Cities ===================-->
+    <string-array name="cities">
+        <item>Select City</item>
+    </string-array>
+
+    <!-- =================== English Proficiency ==============-->
+    <string-array name="english_proficiency">
+        <item>Select your proficiency in English</item>
+        <item>Elementary</item>
+        <item>Limited working proficiency</item>
+        <item>Professional working proficiency</item>
+        <item>Full professional proficiency</item>
+        <item>Native or Bilingual</item>
+    </string-array>
+    
+    <string-array name="experience">
+        <item>Experience in IT field(years)</item>
+    </string-array>
+    
+    <string-array name="platforms">
+        <item>Select platforms you are conversant</item>
+    </string-array>
+
+
 </resources>
