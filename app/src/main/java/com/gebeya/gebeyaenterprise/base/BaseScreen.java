@@ -21,10 +21,10 @@ public abstract class BaseScreen extends Fragment {
     public Typeface fontLight = Fonts.light;
     public Typeface fontNormal = Fonts.normal;
 
-    public View root;
+    public View mRoot;
 
     public View getView(int id) {
-        return root.findViewById(id);
+        return mRoot.findViewById(id);
     }
 
     public BaseActivity getParent() {
@@ -44,7 +44,7 @@ public abstract class BaseScreen extends Fragment {
     }
 
     public TextView getTv(int res_id) {
-        return (TextView) root.findViewById(res_id);
+        return (TextView) mRoot.findViewById(res_id);
     }
 
     public TextView getTv(int id, Typeface f){
@@ -58,7 +58,7 @@ public abstract class BaseScreen extends Fragment {
     }
 
     public EditText getEd(int res_id) {
-        return (EditText) root.findViewById(res_id);
+        return (EditText) mRoot.findViewById(res_id);
     }
 
     public EditText getEd(int id, Typeface font){
@@ -72,7 +72,7 @@ public abstract class BaseScreen extends Fragment {
     }
 
     public Button getBt(int id) {
-        return (Button) root.findViewById(id);
+        return (Button) mRoot.findViewById(id);
     }
 
     public Button getBt(int id, Typeface f){
