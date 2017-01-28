@@ -1,6 +1,8 @@
 package com.gebeya.gebeyaenterprise.base;
 
+import android.content.Context;
 import android.graphics.Typeface;
+import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,9 @@ import android.widget.Toast;
 import com.gebeya.gebeyaenterprise.utils.Fonts;
 
 import java.util.Locale;
+
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -32,10 +37,36 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         d("<============================= onCreate(Bundle) =============================>");
-
+        MySurfaceView surfaceView = new MySurfaceView(this);
+        surfaceView.setRenderer(new GameRenderer());
+        setContentView(surfaceView);
     }
+
+
+    private class MySurfaceView extends GLSurfaceView {
+        public MySurfaceView(Context context) {
+            super(context);
+        }
+    }
+
+    private class GameRenderer implements GLSurfaceView.Renderer {
+        @Override
+        public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
+
+        }
+
+        @Override
+        public void onSurfaceChanged(GL10 gl10, int i, int i1) {
+
+        }
+
+        @Override
+        public void onDrawFrame(GL10 gl10) {
+
+        }
+    }
+
 
     @Override
     protected void onStop() {
