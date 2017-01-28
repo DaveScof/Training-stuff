@@ -18,10 +18,10 @@ public class ProjectInfoFragment extends BaseScreen{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        root = inflater.inflate(R.layout.project_info, container, false);
+        mRoot = inflater.inflate(R.layout.project_info, container, false);
         initViews();
 
-        return root;
+        return mRoot;
     }
 
     @Override
