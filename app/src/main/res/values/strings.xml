@@ -25,7 +25,7 @@
     <string name="read_and_accepted">I have read and accepted the</string>
     <string name="already_member">Already a member?</string>
     <string name="terms_and_conditions"><a href="http://www.google.com/">terms and conditions</a></string>
-    <string name="sing_up_successful">Sing up Successful</string>
+    <string name="sign_up_successful">Sign up Successful</string>
     <string name="talent_sign_up">Talent Sign up</string>
     <string name="last_name">Last Name</string>
     <string name="education">Education</string>
@@ -40,4 +40,6 @@
     <string name="php">PHP</string>
     <string name="ruby_rails">Ruby on Rails</string>
     <string name="ios_swift">iOS/Swift</string>
+
+
 </resources>
