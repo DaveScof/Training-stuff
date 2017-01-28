@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 
 public final class Fonts {
+
     public static Typeface thin;
     public static Typeface light;
     public static Typeface normal;

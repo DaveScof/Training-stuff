@@ -2,6 +2,8 @@ package com.gebeya.gebeyaenterprise.utils;
 
 import android.text.TextUtils;
 
+import com.gebeya.gebeyaenterprise.model.Country;
+
 /**
  * Created by MATIVO-PC on 5/24/2015, 2:06 PM
  * Modified by davescof on 26/1/2017, 11:14 PM
@@ -23,6 +25,7 @@ public class ValidateUtils {
                 value) {
             if (TextUtils.isEmpty(s.trim())) return false;
         }
+        //Country.addCountries();
         return true;
     }
 
