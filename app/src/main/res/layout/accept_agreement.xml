@@ -16,7 +16,7 @@
     <TextView
         style="@style/textView.link"
         android:layout_toRightOf="@id/read_accept_chkbx"
-        android:layout_below="@+id/input_fields"
+        android:layout_toEndOf="@id/read_accept_chkbx"
         android:layout_alignBaseline="@id/read_accept_chkbx"
         android:layout_marginStart="@dimen/dimen_4"
         android:layout_marginLeft="@dimen/dimen_4"
