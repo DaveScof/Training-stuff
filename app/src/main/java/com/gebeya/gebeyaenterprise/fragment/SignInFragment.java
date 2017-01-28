@@ -32,10 +32,10 @@ public class SignInFragment extends BaseScreen {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        root = inflater.inflate(R.layout.fragment_sign_in, container, false);
+        mRoot = inflater.inflate(R.layout.fragment_sign_in, container, false);
         initViews();
         setListeners();
-        return root;
+        return mRoot;
     }
 
     @Override
