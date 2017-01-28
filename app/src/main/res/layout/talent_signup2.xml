@@ -10,19 +10,26 @@
 
     <LinearLayout
         style="@style/inputField">
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Spinner>
 
         <Spinner
+            android:entries="@array/english_proficiency"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Spinner>
+            android:layout_height="wrap_content"/>
+
         <Spinner
+            android:entries="@array/experience"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Spinner>
+            android:layout_height="wrap_content"/>
+
         <Spinner
+            android:entries="@array/platforms"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Spinner>
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:entries="@array/langs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <EditText
             style="@style/editText.email"
