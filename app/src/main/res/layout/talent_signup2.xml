@@ -8,22 +8,27 @@
         style="@style/inputField">
 
         <Spinner
+            android:padding="@dimen/dimen_8"
             android:entries="@array/english_proficiency"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <Spinner
+            android:padding="@dimen/dimen_8"
             android:entries="@array/experience"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <Spinner
+            android:padding="@dimen/dimen_8"
             android:entries="@array/platforms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <Spinner
-            android:entries="@array/langs"
+        <Button
+            android:id="@+id/langs_spinner"
+            android:text="@string/select_languages"
+            android:background="@drawable/button_border"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
