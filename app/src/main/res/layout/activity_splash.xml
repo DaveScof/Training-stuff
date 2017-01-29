@@ -11,12 +11,6 @@
     tools:context="com.gebeya.gebeyaenterprise.activity.Splash"
     android:background="@color/gebeyaPrimary">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_splash_image"/>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,5 +19,14 @@
         android:layout_alignParentBottom="true"
         android:textColor="@color/white"
         android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_splash_image"
+        android:layout_marginTop="102dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
