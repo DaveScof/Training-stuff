@@ -23,6 +23,7 @@ import com.gebeya.gebeyaenterprise.utils.Fonts;
 public class SignUpFragment extends BaseScreen implements View.OnClickListener{
 
     Button mClientSignUpBt;
+    Button mTallentSignUpBt;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -36,16 +37,13 @@ public class SignUpFragment extends BaseScreen implements View.OnClickListener{
     protected void initViews() {
         Fonts.initialize(getActivity());
         mClientSignUpBt = getBt(R.id.signUp_client_bt, Fonts.thin);
+        mTallentSignUpBt = getBt(R.id.signUp_talent_bt, Fonts.bold);
     }
 
     @Override
     protected void setListeners() {
-        mClientSignUpBt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        mClientSignUpBt.setOnClickListener(this);
+        mTallentSignUpBt.setOnClickListener(this);
     }
 
     @Override
