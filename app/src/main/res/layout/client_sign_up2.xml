@@ -3,12 +3,6 @@
               android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-    <include layout="@layout/gebeya_logo"
-        android:id="@id/logoImageView"/>
-
-    <TextView
-        style="@style/textView.title"
-        android:text="@string/client_sign_up"/>
 
     <LinearLayout
         android:id="@+id/input_fields"
@@ -62,9 +56,5 @@
         layout="@layout/accept_agreement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
-    <include layout="@layout/already_member"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"/>
 
 </LinearLayout>
