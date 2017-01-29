@@ -15,6 +15,7 @@ import android.support.v4.view.ViewPager;
 public abstract class BasePagerActivity extends FragmentActivity {
 
     public ViewPager mViewPager;
+    protected abstract void setContentView ();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
