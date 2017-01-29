@@ -3,10 +3,6 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <include layout="@layout/gebeya_logo"/>
-    <TextView
-        style="@style/textView.title"
-        android:text="Talent Sign up"/>
 
     <LinearLayout
         style="@style/inputField">
@@ -50,8 +46,6 @@
         layout="@layout/accept_agreement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
-    <include layout="@layout/already_member"/>
 
 
 </LinearLayout>
