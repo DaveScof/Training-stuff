@@ -17,7 +17,7 @@ public class TalentSignupActivity extends BasePagerActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.talent_signup_view_pager);
+        setContentView(R.layout.signup_view_pager);
 
         mViewPager = getVp(R.id.singleViewPager);
         Fragment[] fragments = new Fragment[]{new TalentSignUpOne(), new TalentSignUpTwo()};
