@@ -20,5 +20,6 @@
         <activity android:name=".activity.SignUpActivitySingle"/>
         <activity android:name=".activity.ProjectInfoActivity"/>
         <activity android:name=".activity.ClientSignUpActivity" android:theme="@style/AppTheme.NoTitle"/>
+        <activity android:name=".activity.TalentSignupActivity" android:theme="@style/AppTheme.NoTitle"/>
     </application>
 </manifest>
