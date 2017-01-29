@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -79,6 +80,10 @@ public abstract class BaseScreen extends Fragment {
         Button b = getBt(id);
         b.setTypeface(f);
         return b;
+    }
+
+    public Spinner getSp (int id){
+        return (Spinner) mRoot.findViewById(id);
     }
 
     protected abstract void initViews();
