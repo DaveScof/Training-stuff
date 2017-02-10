@@ -26,9 +26,8 @@ public class HomePagerActivity extends BasePagerActivity {
 
     @Override
     public void setUpViewPager() {
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
-        tabLayout.setupWithViewPager(mViewPager, true);
-
+//        TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
+//        tabLayout.setupWithViewPager(mViewPager, true);
         Fragment[] fragments = new Fragment[]{new ClientPagerFragment(), new TalentPagerFragment()};
         setUpViewPager(fragments.length,fragments);
     }
