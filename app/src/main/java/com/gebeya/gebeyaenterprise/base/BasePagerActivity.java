@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 
 
 /**
@@ -49,5 +50,9 @@ public abstract class BasePagerActivity extends AppCompatActivity {
         });
 
         return true;
+    }
+
+    public Button getBt(int id) {
+        return (Button) findViewById(id);
     }
 }

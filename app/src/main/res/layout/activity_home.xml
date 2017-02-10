@@ -31,12 +31,14 @@
         android:layout_alignParentBottom="true"
         android:weightSum="2">
         <Button
+            android:id="@+id/sign_up_button"
             style="@style/button.actionPrimary"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/sign_up_home"/>
         <Button
+            android:id="@+id/login_button"
             style="@style/button.actionSecondary"
             android:background="@color/orange"
             android:textColor="@color/white"
