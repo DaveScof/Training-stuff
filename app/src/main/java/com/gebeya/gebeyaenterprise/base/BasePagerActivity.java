@@ -6,13 +6,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 
 
 /**
  * Created by dave-5cof on 1/29/17.
  */
 
-public abstract class BasePagerActivity extends FragmentActivity {
+public abstract class BasePagerActivity extends AppCompatActivity {
 
     public ViewPager mViewPager;
     protected abstract void setContentView ();
