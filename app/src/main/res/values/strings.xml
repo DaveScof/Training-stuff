@@ -40,6 +40,9 @@
     <string name="php">PHP</string>
     <string name="ruby_rails">Ruby on Rails</string>
     <string name="ios_swift">iOS/Swift</string>
+    <string name="sign_up_home">Sign Up For Free</string>
+    <string name="login">Log in</string>
+    <string name="some_text">This is some dumb text that no one should really ever read because of what maybe the sum of obstacles over the period of time has made this incompatible.</string>
 
 
 </resources>

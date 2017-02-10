@@ -21,5 +21,11 @@
         <activity android:name=".activity.ProjectInfoActivity"/>
         <activity android:name=".activity.ClientSignUpActivity" android:theme="@style/AppTheme.NoTitle"/>
         <activity android:name=".activity.TalentSignupActivity" android:theme="@style/AppTheme.NoTitle"/>
+        <receiver android:name=".services.PhoneNumberReceiver">
+            <intent-filter>
+                <action android:name="com.gebeya.gebeyaenterprise.PHONE_CALL"></action>
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>
