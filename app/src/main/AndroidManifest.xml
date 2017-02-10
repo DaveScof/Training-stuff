@@ -8,7 +8,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SignInActivitySingle"/>
         <activity
             android:name=".activity.Splash"
             android:theme="@style/AppTheme.FullScreen">
@@ -17,12 +16,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".activity.HomePagerActivity"
-                  android:theme="@style/AppTheme.FullScreen"/>
-        <activity android:name=".activity.SignUpActivitySingle"/>
+                  android:theme="@style/AppTheme.ToolBar"/>
+
+        <activity android:name=".activity.SignUpActivitySingle"
+                  android:parentActivityName=".activity.HomePagerActivity"
+                  android:theme="@style/AppTheme.ToolBar"/>
+
+        <activity android:name=".activity.SignInActivitySingle"
+            android:parentActivityName=".activity.HomePagerActivity"/>
+
+        <activity android:name=".activity.ClientSignUpActivity"
+                  android:theme="@style/AppTheme.ToolBar"
+                  android:parentActivityName=".activity.SignUpActivitySingle"/>
+
+        <activity android:name=".activity.TalentSignupActivity"
+                  android:theme="@style/AppTheme.ToolBar"
+                  android:parentActivityName=".activity.SignUpActivitySingle"/>
+
         <activity android:name=".activity.ProjectInfoActivity"/>
-        <activity android:name=".activity.ClientSignUpActivity" android:theme="@style/AppTheme.NoTitle"/>
-        <activity android:name=".activity.TalentSignupActivity" android:theme="@style/AppTheme.NoTitle"/>
+
+
         <receiver android:name=".services.PhoneNumberReceiver">
             <intent-filter>
                 <action android:name="com.gebeya.gebeyaenterprise.PHONE_CALL"></action>
