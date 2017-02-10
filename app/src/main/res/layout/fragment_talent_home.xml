@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="2">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:src="@drawable/img_talent_home"
+        />
+    <TextView
+        style="@style/textView.title"
+        android:text="@string/client"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_16"
+        android:paddingRight="@dimen/dimen_16"
+        android:text="@string/some_text"
+        android:gravity="center"/>
+
+</LinearLayout>
