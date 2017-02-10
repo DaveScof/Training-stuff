@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
     <TextView
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="@dimen/dimen_120"
-        android:layout_marginStart="@dimen/dimen_120"
         style="@style/textView"
         android:text="@string/already_member"
         android:id="@+id/alreadyMemberTv"/>
 
     <TextView
-        style="@style/textView.link"
-        android:text="@string/sign_in"
-        android:layout_alignBaseline="@id/alreadyMemberTv"
-        android:layout_toRightOf="@+id/alreadyMemberTv"
-        android:layout_toEndOf="@+id/alreadyMemberTv"
+        android:layout_toRightOf="@id/alreadyMemberTv"
         android:layout_marginLeft="@dimen/dimen_4"
-        android:layout_marginStart="@dimen/dimen_4"/>
+        style="@style/textView.link"
+        android:text="@string/sign_in"/>
 
 </RelativeLayout>

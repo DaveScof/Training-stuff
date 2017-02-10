@@ -7,14 +7,13 @@
 
     <TextView
         style="@style/textView.title"
+        android:layout_marginBottom="@dimen/dimen_4"
         android:text="@string/talent_sign_up"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/singleViewPager"
-        android:layout_width="wrap_content"
-        android:layout_height="360dp">
-
-    </android.support.v4.view.ViewPager>
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
 
     <include layout="@layout/already_member"/>
 
