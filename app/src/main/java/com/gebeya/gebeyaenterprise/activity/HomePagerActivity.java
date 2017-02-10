@@ -1,5 +1,6 @@
 package com.gebeya.gebeyaenterprise.activity;
 
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 
@@ -25,6 +26,9 @@ public class HomePagerActivity extends BasePagerActivity {
 
     @Override
     public void setUpViewPager() {
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
+        tabLayout.setupWithViewPager(mViewPager, true);
+
         Fragment[] fragments = new Fragment[]{new ClientPagerFragment(), new TalentPagerFragment()};
         setUpViewPager(fragments.length,fragments);
     }
