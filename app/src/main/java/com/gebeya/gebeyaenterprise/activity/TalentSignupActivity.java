@@ -20,10 +20,12 @@ public class TalentSignupActivity extends BasePagerActivity{
     }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView();
+    public void initViewPager() {
         mViewPager = getVp(R.id.singleViewPager);
+    }
+
+    @Override
+    public void setUpViewPager() {
         Fragment[] fragments = new Fragment[]{new TalentSignUpOne(), new TalentSignUpTwo()};
         setUpViewPager(fragments.length, fragments);
     }

@@ -17,6 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.HomePagerActivity"
+                  android:theme="@style/AppTheme.FullScreen"/>
         <activity android:name=".activity.SignUpActivitySingle"/>
         <activity android:name=".activity.ProjectInfoActivity"/>
         <activity android:name=".activity.ClientSignUpActivity" android:theme="@style/AppTheme.NoTitle"/>

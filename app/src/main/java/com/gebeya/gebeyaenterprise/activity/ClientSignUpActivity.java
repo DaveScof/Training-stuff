@@ -27,11 +27,18 @@ public class ClientSignUpActivity extends BasePagerActivity {
     }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView();
+    public void initViewPager() {
         mViewPager = getVp(R.id.singleViewPager);
+    }
+
+    @Override
+    public void setUpViewPager() {
         Fragment[] fragments = new Fragment[]{new ClientSignUp1Fragment(), new ClientSignUp2Fragment()};
         setUpViewPager(fragments.length, fragments);
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 }

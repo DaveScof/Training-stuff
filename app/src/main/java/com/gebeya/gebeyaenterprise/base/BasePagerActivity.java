@@ -17,10 +17,15 @@ public abstract class BasePagerActivity extends AppCompatActivity {
 
     public ViewPager mViewPager;
     protected abstract void setContentView ();
+    public abstract void initViewPager ();
+    public abstract void setUpViewPager();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView();
+        initViewPager();
+        setUpViewPager();
     }
 
     public ViewPager getVp (int id) {
