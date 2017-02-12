@@ -29,8 +29,9 @@
             style="@style/editText.textPassword"/>
 
         <Button
+            android:id="@+id/nextButotn"
             android:layout_marginTop="@dimen/dimen_16"
-           style="@style/button.actionPrimary"
+            style="@style/button.actionPrimary"
             android:text="@string/next"/>
     </LinearLayout>
 
