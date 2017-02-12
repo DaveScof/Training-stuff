@@ -12,7 +12,6 @@ import com.gebeya.gebeyaenterprise.fragment.SignUpTalentTwo;
  * Created by dave-5cof on 1/29/17.
  */
 public class SignUpTalentActivity extends BasePagerActivity{
-    Fragment[] fragments;
 
     @Override
     protected void setContentView() {
@@ -26,7 +25,7 @@ public class SignUpTalentActivity extends BasePagerActivity{
 
     @Override
     public void setUpViewPager() {
-        fragments = new Fragment[]{new SignUpTalentOne(), new SignUpTalentTwo()};
+        Fragment[] fragments = new Fragment[]{new SignUpTalentOne(), new SignUpTalentTwo()};
         setUpViewPager(fragments.length, fragments);
     }
 
