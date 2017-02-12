@@ -1,0 +1,38 @@
+package com.gebeya.gebeyaenterprise.activity;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+
+import com.gebeya.gebeyaenterprise.R;
+import com.gebeya.gebeyaenterprise.base.BasePagerActivity;
+import com.gebeya.gebeyaenterprise.fragment.SignUpClientOne;
+import com.gebeya.gebeyaenterprise.fragment.SignUpClientTwo;
+
+/**
+ * Created by dave-5cof on 1/27/17.
+ */
+
+public class SignUpClient extends BasePagerActivity {
+
+    @Override
+    protected void setContentView() {
+        setContentView(R.layout.frag_signup_parent);
+    }
+
+    @Override
+    public void initViewPager() {
+        mViewPager = getVp(R.id.singleViewPager);
+    }
+
+    @Override
+    public void setUpViewPager() {
+        Fragment[] fragments = new Fragment[]{new SignUpClientOne(), new SignUpClientTwo()};
+        setUpViewPager(fragments.length, fragments);
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+}

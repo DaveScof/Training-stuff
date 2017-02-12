@@ -22,7 +22,7 @@ public class Splash extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent i = new Intent (Splash.this, HomePagerActivity.class);
+                Intent i = new Intent (Splash.this, TourScreen.class);
                 startActivity(i);
                 finish();
             }

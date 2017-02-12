@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/inputField">
+
+        <Spinner
+            android:padding="@dimen/dimen_8"
+            android:entries="@array/english_proficiency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:padding="@dimen/dimen_8"
+            android:entries="@array/experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:padding="@dimen/dimen_8"
+            android:entries="@array/platforms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/langs_spinner"
+            android:text="@string/select_languages"
+            android:background="@drawable/button_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            style="@style/editText.email"
+            android:hint="@string/education"/>
+
+        <EditText
+            style="@style/editText.email"
+            android:hint="@string/professional_certificates"/>
+
+        <Button
+            style="@style/button.actionPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="@string/get_started"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/read_accept"
+        layout="@layout/accept_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

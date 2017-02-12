@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+       style="@style/inputField">
+
+        <EditText
+           style="@style/editText.email"/>
+
+        <EditText
+            style="@style/editText.textPassword"/>
+
+        <EditText
+            style="@style/editText.textPassword"
+            android:hint="@string/repeat_password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/individualRadBt"
+                android:textColor="@color/gebeyaPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/individual_account"
+                android:textSize="@dimen/text_medium"/>
+            <ImageView
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_width="@dimen/dimen_16"
+                android:layout_height="@dimen/dimen_16"
+                android:src="@drawable/ic_info"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:textColor="@color/gebeyaPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company_account"
+                android:textSize="@dimen/text_medium"/>
+            <ImageView
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_width="@dimen/dimen_16"
+                android:layout_height="@dimen/dimen_16"
+                android:src="@drawable/ic_info"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <Button
+            style="@style/button.actionPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="@string/next"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

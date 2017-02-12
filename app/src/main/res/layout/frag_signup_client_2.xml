@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/input_fields"
+        style="@style/inputField">
+
+        <EditText
+            android:id="@+id/first_name_Ed"
+            style="@style/editText"
+            android:hint="@string/first_name" />
+
+        <EditText
+            android:id="@+id/second_name_Ed"
+            style="@style/editText"
+            android:hint="@string/second_name" />
+
+        <Spinner
+            android:id="@+id/country_sp"
+            android:soundEffectsEnabled="true"
+            android:hapticFeedbackEnabled="true"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:padding="@dimen/dimen_4"
+            android:entries="@array/countries_array"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:backgroundTint="@color/colorPrimary">
+        </Spinner>
+
+        <Spinner
+            android:spinnerMode="dialog"
+            android:backgroundTint="@color/colorPrimary"
+            android:soundEffectsEnabled="true"
+            android:hapticFeedbackEnabled="true"
+            android:id="@+id/city_sp"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cities">
+        </Spinner>
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_8"
+            style="@style/button.actionPrimary"
+            android:text="@string/get_started"
+            android:id="@+id/signUp_client_bt"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/read_accept"
+        layout="@layout/accept_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

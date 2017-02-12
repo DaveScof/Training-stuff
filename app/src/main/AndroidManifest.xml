@@ -17,25 +17,26 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.HomePagerActivity"
-                  android:theme="@style/AppTheme.ToolBar"/>
+        <activity android:name=".activity.TourScreen"
+                  android:theme="@style/AppTheme.FullScreen"/>
 
-        <activity android:name=".activity.SignUpActivitySingle"
-                  android:parentActivityName=".activity.HomePagerActivity"
-                  android:theme="@style/AppTheme.ToolBar"/>
+        <activity android:name=".activity.SignUp"
+                  android:parentActivityName=".activity.TourScreen"
+                  android:theme="@style/AppTheme.FullScreen"/>
 
-        <activity android:name=".activity.SignInActivitySingle"
-            android:parentActivityName=".activity.HomePagerActivity"/>
+        <activity android:name=".activity.SignIn"
+                  android:parentActivityName=".activity.TourScreen"
+                  android:theme="@style/AppTheme.FullScreen"/>
 
-        <activity android:name=".activity.ClientSignUpActivity"
-                  android:theme="@style/AppTheme.ToolBar"
-                  android:parentActivityName=".activity.SignUpActivitySingle"/>
+        <activity android:name=".activity.SignUpClient"
+                  android:theme="@style/AppTheme.FullScreen"
+                  android:parentActivityName=".activity.SignUp"/>
 
-        <activity android:name=".activity.TalentSignupActivity"
-                  android:theme="@style/AppTheme.ToolBar"
-                  android:parentActivityName=".activity.SignUpActivitySingle"/>
+        <activity android:name=".activity.SignUpTalent"
+                  android:theme="@style/AppTheme.FullScreen"
+                  android:parentActivityName=".activity.SignUp"/>
 
-        <activity android:name=".activity.ProjectInfoActivity"/>
+        <activity android:name=".activity.ProjectInfo"/>
 
 
         <receiver android:name=".services.PhoneNumberReceiver">

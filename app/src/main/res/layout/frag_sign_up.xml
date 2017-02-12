@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/gebeya_logo"
+        android:id="@+id/logoImageView"/>
+
+    <TextView
+        style="@style/textView.title"
+        android:text="@string/sign_up"
+        android:id="@+id/titleTextView"
+        />
+
+    <LinearLayout
+        style="@style/inputField">
+
+        <Button
+            android:id="@+id/signUp_talent_bt"
+           style="@style/button.actionPrimary"
+            android:text="@string/talent"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/signUp_client_bt"
+            style="@style/button.actionSecondary"
+            android:text="@string/client"/>
+    </LinearLayout>
+</RelativeLayout>
