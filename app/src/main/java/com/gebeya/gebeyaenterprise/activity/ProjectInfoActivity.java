@@ -9,7 +9,7 @@ import com.gebeya.gebeyaenterprise.fragment.ProjectInfo;
  * Created by dave-5cof on 1/26/17.
  */
 
-public class ProjectInfo extends BaseSingleFragmentActivity {
+public class ProjectInfoActivity extends BaseSingleFragmentActivity {
     @Override
     public Fragment createFragment() {
         return new com.gebeya.gebeyaenterprise.fragment.ProjectInfo();

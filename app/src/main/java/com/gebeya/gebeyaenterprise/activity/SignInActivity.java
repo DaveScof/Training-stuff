@@ -9,7 +9,7 @@ import com.gebeya.gebeyaenterprise.fragment.SignIn;
  * Created by gebeya-admin on 1/23/17.
  */
 
-public class SignIn extends BaseSingleFragmentActivity {
+public class SignInActivity extends BaseSingleFragmentActivity {
     @Override
     public Fragment createFragment() {
         return new com.gebeya.gebeyaenterprise.fragment.SignIn();

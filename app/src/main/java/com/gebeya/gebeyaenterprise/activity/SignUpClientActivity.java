@@ -13,7 +13,7 @@ import com.gebeya.gebeyaenterprise.fragment.SignUpClientTwo;
  * Created by dave-5cof on 1/27/17.
  */
 
-public class SignUpClient extends BasePagerActivity {
+public class SignUpClientActivity extends BasePagerActivity {
 
     @Override
     protected void setContentView() {
