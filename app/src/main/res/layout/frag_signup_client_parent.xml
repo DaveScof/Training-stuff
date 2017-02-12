@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/gebeya_logo"/>
+
+    <TextView
+        style="@style/textView.title"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:text="@string/client_sign_up"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/singleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"/>
+
+    <include layout="@layout/already_member"/>
+
+</LinearLayout>

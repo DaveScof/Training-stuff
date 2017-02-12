@@ -17,7 +17,7 @@ public class SignUpClientActivity extends BasePagerActivity {
 
     @Override
     protected void setContentView() {
-        setContentView(R.layout.frag_signup_parent);
+        setContentView(R.layout.frag_signup_client_parent);
     }
 
     @Override
@@ -34,5 +34,9 @@ public class SignUpClientActivity extends BasePagerActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
+
+    public void nextButton(){
+        mViewPager.setCurrentItem(1);
     }
 }

@@ -24,7 +24,7 @@
                   android:parentActivityName=".activity.TourScreen"
                   android:theme="@style/AppTheme.FullScreen"/>
 
-        <activity android:name=".activity.SignIn"
+        <activity android:name=".activity.SignInActivity"
                   android:parentActivityName=".activity.TourScreen"
                   android:theme="@style/AppTheme.FullScreen"/>
 

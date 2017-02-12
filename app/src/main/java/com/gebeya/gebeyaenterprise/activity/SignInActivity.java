@@ -12,6 +12,6 @@ import com.gebeya.gebeyaenterprise.fragment.SignIn;
 public class SignInActivity extends BaseSingleFragmentActivity {
     @Override
     public Fragment createFragment() {
-        return new com.gebeya.gebeyaenterprise.fragment.SignIn();
+        return new SignIn();
     }
 }

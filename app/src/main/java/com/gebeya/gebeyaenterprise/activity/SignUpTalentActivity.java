@@ -16,7 +16,7 @@ public class SignUpTalentActivity extends BasePagerActivity{
 
     @Override
     protected void setContentView() {
-        setContentView(R.layout.frag_signup_parent);
+        setContentView(R.layout.frag_signup_talent_parent);
     }
 
     @Override
