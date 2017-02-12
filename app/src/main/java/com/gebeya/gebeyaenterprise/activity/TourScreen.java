@@ -22,11 +22,6 @@ public class TourScreen extends BasePagerActivity {
     private Button mSignUpButton;
     private Button mLoginButton;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
-
-    }
 
     @Override
     protected void setContentView() {
@@ -44,13 +39,6 @@ public class TourScreen extends BasePagerActivity {
         tabLayout.setupWithViewPager(mViewPager, true);
         Fragment[] fragments = new Fragment[]{new TourClient(), new TourTalent()};
         setUpViewPager(fragments.length,fragments);
-    }
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        initViews();
-        setListeners();
     }
 
     public void initViews(){
