@@ -24,7 +24,7 @@
     <string name="get_started">Get Started</string>
     <string name="read_and_accepted">I have read and accepted the</string>
     <string name="already_member">Already a member?</string>
-    <string name="terms_and_conditions"><a href="http://www.google.com/">terms and conditions</a></string>
+    <string name="terms_and_conditions"><a href="http://www.google.com/">Terms And Conditions</a></string>
     <string name="sign_up_successful">Sign up Successful</string>
     <string name="talent_sign_up">Talent Sign up</string>
     <string name="last_name">Last Name</string>
@@ -44,4 +44,14 @@
     <string name="login">Log in</string>
     <string name="some_text">This is some dumb text that no one should really ever read because of what maybe the sum of obstacles over the period of time has made this incompatible.</string>
     <string name="tab_text">Tab</string>
+    <string name="dawit_abraham">Dawit Abraham</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="home">Home</string>
+    <string name="inbox">Inbox</string>
+    <string name="notification">Notifications</string>
+    <string name="my_projects">My Projects</string>
+    <string name="saved_projects">Saved Projects</string>
+    <string name="to_do_list">To Do List</string>
+    <string name="browse_talents">Browse Talents</string>
+    <string name="about">About</string>
 </resources>
