@@ -20,7 +20,7 @@
         <activity android:name=".activity.TourScreen"
                   android:theme="@style/AppTheme.FullScreen"/>
 
-        <activity android:name=".activity.SignUp"
+        <activity android:name=".activity.SignUpActivity"
                   android:parentActivityName=".activity.TourScreen"
                   android:theme="@style/AppTheme.FullScreen"/>
 
@@ -28,15 +28,15 @@
                   android:parentActivityName=".activity.TourScreen"
                   android:theme="@style/AppTheme.FullScreen"/>
 
-        <activity android:name=".activity.SignUpClient"
+        <activity android:name=".activity.SignUpClientActivity"
                   android:theme="@style/AppTheme.FullScreen"
-                  android:parentActivityName=".activity.SignUp"/>
+                  android:parentActivityName=".activity.SignUpActivity"/>
 
-        <activity android:name=".activity.SignUpTalent"
+        <activity android:name=".activity.SignUpTalentActivity"
                   android:theme="@style/AppTheme.FullScreen"
-                  android:parentActivityName=".activity.SignUp"/>
+                  android:parentActivityName=".activity.SignUpActivity"/>
 
-        <activity android:name=".activity.ProjectInfo"/>
+        <activity android:name=".activity.ProjectInfoActivity"/>
 
 
         <receiver android:name=".services.PhoneNumberReceiver">

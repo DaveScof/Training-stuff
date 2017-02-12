@@ -62,7 +62,7 @@ public class TourScreen extends BasePagerActivity {
         mSignUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TourScreen.this,SignUp.class);
+                Intent intent = new Intent(TourScreen.this,SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +70,7 @@ public class TourScreen extends BasePagerActivity {
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TourScreen.this,SignIn.class);
+                Intent intent = new Intent(TourScreen.this,SignInActivity.class);
                 startActivity(intent);
             }
         });

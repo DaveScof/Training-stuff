@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.gebeya.gebeyaenterprise.activity.SignUpClient;
-import com.gebeya.gebeyaenterprise.activity.SignUpTalent;
+import com.gebeya.gebeyaenterprise.activity.SignUpClientActivity;
+import com.gebeya.gebeyaenterprise.activity.SignUpTalentActivity;
 import com.gebeya.gebeyaenterprise.base.BaseScreen;
 import com.gebeya.gebeyaenterprise.R;
 import com.gebeya.gebeyaenterprise.utils.Fonts;
@@ -56,11 +56,11 @@ public class SignUp extends BaseScreen implements View.OnClickListener{
         Intent intent;
         switch (view.getId()) {
             case R.id.signUp_client_bt:
-                intent = new Intent(getActivity(), SignUpClient.class);
+                intent = new Intent(getActivity(), SignUpClientActivity.class);
                 startActivity(intent);
                 break;
             case R.id.signUp_talent_bt:
-                intent = new Intent(getActivity(), SignUpTalent.class);
+                intent = new Intent(getActivity(), SignUpTalentActivity.class);
                 startActivity(intent);
         }
 

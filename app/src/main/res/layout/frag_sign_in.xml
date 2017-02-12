@@ -19,7 +19,7 @@
 
     <LinearLayout
         style="@style/inputField"
-        android:id="@id/input_fields">
+        android:id="@+id/input_fields">
 
         <EditText
             android:imeOptions="actionNext"
@@ -43,7 +43,7 @@
        style="@style/textView.link"
         android:text="New User? Sign Up"
         android:id="@+id/signUpLink"
-       android:layout_below="@id/input_fields"
+       android:layout_below="@+id/input_fields"
        />
 
 

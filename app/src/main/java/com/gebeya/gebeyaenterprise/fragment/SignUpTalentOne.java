@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.gebeya.gebeyaenterprise.R;
+import com.gebeya.gebeyaenterprise.activity.SignUpTalentActivity;
 import com.gebeya.gebeyaenterprise.base.BaseScreen;
 
 /**
@@ -21,6 +22,8 @@ public class SignUpTalentOne extends BaseScreen implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mRoot = inflater.inflate(R.layout.frag_signup_talent_1,container,false);
+        initViews();
+        setListeners();
         return mRoot;
     }
 
@@ -36,6 +39,6 @@ public class SignUpTalentOne extends BaseScreen implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        
+        ((SignUpTalentActivity) getActivity()).nextButton();
     }
 }
