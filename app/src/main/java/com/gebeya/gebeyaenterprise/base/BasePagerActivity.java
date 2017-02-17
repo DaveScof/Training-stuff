@@ -3,7 +3,6 @@ package com.gebeya.gebeyaenterprise.base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -19,21 +18,23 @@ public abstract class BasePagerActivity extends AppCompatActivity {
     public ViewPager mViewPager;
     protected abstract void setContentView ();
     public abstract void initViewPager ();
-    public abstract void setUpViewPager();
+    public abstract void addFragments();
+    public abstract void initViews();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView();
+        initViews();
         initViewPager();
-        setUpViewPager();
+        addFragments();
     }
 
     public ViewPager getVp (int id) {
         return  (ViewPager) findViewById(id);
     }
 
-    public boolean setUpViewPager (final int count, final Fragment... fragments){
+    public boolean addFragments(final Fragment... fragments){
         if (mViewPager == null)
             return false;
 
@@ -45,10 +46,9 @@ public abstract class BasePagerActivity extends AppCompatActivity {
 
             @Override
             public int getCount() {
-                return count;
+                return fragments.length;
             }
         });
-
 
         return true;
     }

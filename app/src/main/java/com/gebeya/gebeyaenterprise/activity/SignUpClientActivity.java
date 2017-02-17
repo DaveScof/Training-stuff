@@ -26,9 +26,14 @@ public class SignUpClientActivity extends BasePagerActivity {
     }
 
     @Override
-    public void setUpViewPager() {
+    public void addFragments() {
         Fragment[] fragments = new Fragment[]{new SignUpClientOne(), new SignUpClientTwo()};
-        setUpViewPager(fragments.length, fragments);
+        addFragments(fragments);
+    }
+
+    @Override
+    public void initViews() {
+
     }
 
     @Override

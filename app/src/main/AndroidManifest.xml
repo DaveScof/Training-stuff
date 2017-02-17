@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gebeya.gebeyaenterprise">
+          package="com.gebeya.gebeyaenterprise">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppCompat">
         <activity
             android:name=".activity.Splash"
-            android:theme="@style/AppTheme.FullScreen">
+            android:theme="@style/AppCompat.FullScreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.TourScreen"
+            android:theme="@style/AppCompat.FullScreen"/>
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:parentActivityName=".activity.TourScreen"
+            android:theme="@style/AppCompat"/>
+        <activity
+            android:name=".activity.SignInActivity"
+            android:parentActivityName=".activity.TourScreen"
+            android:theme="@style/AppCompat"/>
+        <activity
+            android:name=".activity.SignUpClientActivity"
+            android:parentActivityName=".activity.SignUpActivity"
+            android:theme="@style/AppCompat"/>
+        <activity
+            android:name=".activity.SignUpTalentActivity"
+            android:parentActivityName=".activity.SignUpActivity"
+            android:theme="@style/AppCompat"/>
+        <activity
+            android:name=".activity.ProjectInfoActivity"
+            android:theme="@style/AppCompat"/>
 
-        <activity android:name=".activity.TourScreen"
-                  android:theme="@style/AppTheme.FullScreen"/>
-
-        <activity android:name=".activity.SignUpActivity"
-                  android:parentActivityName=".activity.TourScreen"
-                  android:theme="@style/AppTheme.FullScreen"/>
-
-        <activity android:name=".activity.SignInActivity"
-                  android:parentActivityName=".activity.TourScreen"
-                  android:theme="@style/AppTheme.FullScreen"/>
-
-        <activity android:name=".activity.SignUpClientActivity"
-                  android:theme="@style/AppTheme.FullScreen"
-                  android:parentActivityName=".activity.SignUpActivity"/>
-
-        <activity android:name=".activity.SignUpTalentActivity"
-                  android:theme="@style/AppTheme.FullScreen"
-                  android:parentActivityName=".activity.SignUpActivity"/>
-
-        <activity android:name=".activity.ProjectInfoActivity"/>
-
-
-        <receiver android:name=".services.PhoneNumberReceiver">
-            <intent-filter>
-                <action android:name="com.gebeya.gebeyaenterprise.PHONE_CALL"></action>
-            </intent-filter>
-        </receiver>
-
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:parentActivityName=".activity.SignInActivity"
+            android:theme="@style/AppCompat.FullScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gebeya.gebeyaenterprise.activity.SignInActivity"/>
+        </activity>
     </application>
+
 </manifest>

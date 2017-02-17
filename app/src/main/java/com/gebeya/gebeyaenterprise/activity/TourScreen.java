@@ -1,9 +1,6 @@
 package com.gebeya.gebeyaenterprise.activity;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.view.View;
@@ -34,17 +31,20 @@ public class TourScreen extends BasePagerActivity {
     }
 
     @Override
-    public void setUpViewPager() {
+    public void addFragments() {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(mViewPager, true);
         Fragment[] fragments = new Fragment[]{new TourClient(), new TourTalent()};
-        setUpViewPager(fragments.length,fragments);
+        addFragments(fragments);
     }
 
-    public void initViews(){
-        mSignUpButton = getBt(R.id.sign_up_button);
-        mLoginButton = getBt(R.id.login_button);
+    @Override
+    public void initViews() {
+            mSignUpButton = getBt(R.id.sign_up_button);
+            mLoginButton = getBt(R.id.login_button);
+            setListeners();
     }
+
 
     public void setListeners(){
         mSignUpButton.setOnClickListener(new View.OnClickListener() {

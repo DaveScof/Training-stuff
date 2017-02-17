@@ -38,35 +38,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         d("<============================= onCreate(Bundle) =============================>");
-        MySurfaceView surfaceView = new MySurfaceView(this);
-        surfaceView.setRenderer(new GameRenderer());
-        setContentView(surfaceView);
     }
-
-
-    private class MySurfaceView extends GLSurfaceView {
-        public MySurfaceView(Context context) {
-            super(context);
-        }
-    }
-
-    private class GameRenderer implements GLSurfaceView.Renderer {
-        @Override
-        public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
-
-        }
-
-        @Override
-        public void onSurfaceChanged(GL10 gl10, int i, int i1) {
-
-        }
-
-        @Override
-        public void onDrawFrame(GL10 gl10) {
-
-        }
-    }
-
 
     @Override
     protected void onStop() {

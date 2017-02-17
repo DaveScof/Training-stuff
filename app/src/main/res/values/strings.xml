@@ -54,4 +54,11 @@
     <string name="to_do_list">To Do List</string>
     <string name="browse_talents">Browse Talents</string>
     <string name="about">About</string>
+    <string name="options">options</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

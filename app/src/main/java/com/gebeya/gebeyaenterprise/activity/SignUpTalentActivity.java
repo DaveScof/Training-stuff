@@ -24,9 +24,14 @@ public class SignUpTalentActivity extends BasePagerActivity{
     }
 
     @Override
-    public void setUpViewPager() {
+    public void addFragments() {
         Fragment[] fragments = new Fragment[]{new SignUpTalentOne(), new SignUpTalentTwo()};
-        setUpViewPager(fragments.length, fragments);
+        addFragments(fragments);
+    }
+
+    @Override
+    public void initViews() {
+
     }
 
     public void nextButton(){

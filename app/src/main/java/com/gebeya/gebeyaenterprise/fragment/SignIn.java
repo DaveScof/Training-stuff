@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.gebeya.gebeyaenterprise.activity.ProjectInfoActivity;
+import com.gebeya.gebeyaenterprise.activity.HomeActivity;
 import com.gebeya.gebeyaenterprise.activity.SignUpActivity;
 import com.gebeya.gebeyaenterprise.base.BaseScreen;
 import com.gebeya.gebeyaenterprise.R;
@@ -67,7 +67,7 @@ public class SignIn extends BaseScreen {
                     return;
                 }
 
-                Intent intent = new Intent(getActivity(), ProjectInfoActivity.class);
+                Intent intent = new Intent(getActivity(), HomeActivity.class);
                 startActivity(intent);
             }
         });
