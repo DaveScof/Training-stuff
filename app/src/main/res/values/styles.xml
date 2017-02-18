@@ -30,6 +30,9 @@
     </style>
 
 
+
+
+    <!-- ============================== Buttons ==============================-->
     <style name="button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -44,7 +47,6 @@
         <item name="android:background">@color/gebeyaPrimary</item>
     </style>
 
-    <!-- ============================== Buttons ==============================-->
     <style name="button.actionSecondary">
         <item name="android:textSize">@dimen/text_large</item>
         <item name="android:textColor">@color/black</item>
