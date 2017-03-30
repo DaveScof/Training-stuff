@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -29,6 +31,8 @@ public class SignIn extends BaseScreen {
     private String mEmailInput;
     private String mPasswordInput;
 
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -48,9 +52,11 @@ public class SignIn extends BaseScreen {
 
     @Override
     protected void setListeners() {
+
         mSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 mEmailInput = mEmailEditText.getText().toString().trim();
                 mPasswordInput = mPasswordEditText.getText().toString();
 
@@ -69,6 +75,17 @@ public class SignIn extends BaseScreen {
 
                 Intent intent = new Intent(getActivity(), HomeActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        mPasswordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                if (i == EditorInfo.IME_ACTION_GO){
+                    mSignInButton.callOnClick();
+                    return true;
+                }
+                return false;
             }
         });
 

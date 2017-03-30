@@ -14,12 +14,12 @@ import com.gebeya.gebeyaenterprise.R;
 
 public abstract class BaseSingleFragmentActivity extends AppCompatActivity {
     public abstract Fragment createFragment ();
+    public abstract void setContentView();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.frag_single);
-
+        setContentView();
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragment = fragmentManager.findFragmentById(R.id.fragment_container);

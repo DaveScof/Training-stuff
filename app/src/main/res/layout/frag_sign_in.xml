@@ -22,7 +22,6 @@
         android:id="@+id/input_fields">
 
         <EditText
-            android:imeOptions="actionNext"
             android:id="@+id/email_edit_text"
             style="@style/editText.email"/>
 

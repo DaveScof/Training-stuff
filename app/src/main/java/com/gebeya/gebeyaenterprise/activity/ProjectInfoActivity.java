@@ -14,4 +14,9 @@ public class ProjectInfoActivity extends BaseSingleFragmentActivity {
     public Fragment createFragment() {
         return new com.gebeya.gebeyaenterprise.fragment.ProjectInfo();
     }
+
+    @Override
+    public void setContentView() {
+
+    }
 }

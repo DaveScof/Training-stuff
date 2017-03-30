@@ -19,15 +19,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppCompat.Statusbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
     <style name="AppCompat.FullScreen" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-        <!--<item name="android:windowFullscreen">true</item>-->
-        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <item name="android:windowFullscreen">true</item>
     </style>
+
+
 
 
 
@@ -112,7 +121,9 @@
     </style>
 
     <style name="editText.email">
+        <item name="android:inputType">textEmailAddress</item>
         <item name="android:imeOptions">actionNext</item>
+        <item name="android:maxLines">1</item>
         <item name="android:hint">@string/email_address</item>
     </style>
 

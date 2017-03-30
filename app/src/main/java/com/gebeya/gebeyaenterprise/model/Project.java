@@ -3,19 +3,18 @@ package com.gebeya.gebeyaenterprise.model;
 import java.util.UUID;
 
 /**
- * Created by gebeya-admin on 1/25/17.
+ * Created by davescof on 2/25/17.
  */
 
-public class User {
+public class Project {
+    private String mTitle;
     private UUID mUUID;
-    private String mUserName;
-    private String mPhone;
 
-    public User (UUID uuid){
+    public Project(UUID uuid){
         mUUID = uuid;
     }
 
-    public User(){
+    public Project(){
         this(UUID.randomUUID());
     }
 }

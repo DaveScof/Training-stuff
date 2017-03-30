@@ -42,9 +42,9 @@
 
         <activity
             android:name=".activity.HomeActivity"
-            android:label="@string/title_activity_home"
+            android:label="@string/Gebeya"
             android:parentActivityName=".activity.SignInActivity"
-            android:theme="@style/AppCompat.FullScreen">
+            android:theme="@style/AppCompat.Statusbar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gebeya.gebeyaenterprise.activity.SignInActivity"/>

@@ -3,23 +3,73 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import"/>
+            android:id="@+id/nav_home"
+            android:title="@string/home"/>
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery"/>
+            android:id="@+id/nav_inbox"
+            android:title="@string/inbox"/>
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow"/>
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools"/>
+            android:id="@+id/nav_notification"
+            android:title="@string/notification"/>
     </group>
 
+    <item android:title="@string/projects">
+        <menu>
+            <item
+                android:id="@+id/nav_projects"
+                android:title="@string/my_projects"/>
+            <item
+                android:id="@+id/nav_saved_projects"
+                android:title="@string/saved_projects"/>
+            <item
+                android:id="@+id/nav_to_do_list"
+                android:title="@string/to_do_list"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/Gebeya">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:title="@string/about"/>
+            <item
+                android:id="@+id/nav_terms_and_conditions"
+                android:title="@string/terms_and_conditions"/>
+            <item
+                android:id="@+id/nav_settings"
+                android:title="@string/action_settings"/>
+        </menu>
+    </item>
+<!--
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_projects"
+            android:title="@string/my_projects"/>
+        <item
+            android:id="@+id/nav_saved_projects"
+            android:title="@string/saved_projects"/>
+        <item
+            android:id="@+id/nav_to_do_list"
+            android:title="@string/to_do_list"/>
+    </group>
+
+-->
+<!--
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/about"/>
+        <item
+            android:id="@+id/nav_terms_and_conditions"
+            android:title="@string/terms_and_conditions"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/action_settings"/>
+    </group>
+-->
+
+
+<!--
     <item android:title="Communicate">
         <menu>
             <item
@@ -31,6 +81,6 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send"/>
         </menu>
-    </item>
+    </item>-->
 
 </menu>

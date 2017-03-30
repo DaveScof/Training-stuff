@@ -84,4 +84,25 @@
         </LinearLayout>
 
         </LinearLayout>
+
+    <Button
+        android:background="@color/white"
+        android:textColor="@color/gebeyaPrimary"
+        android:textSize="@dimen/text_medium"
+        android:id="@+id/button_find_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:text="Find Contact"
+        />
+
+    <Button
+        android:background="@color/gebeyaPrimary"
+        android:id="@+id/button_call"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:text="Call"
+        />
+
 </LinearLayout>
